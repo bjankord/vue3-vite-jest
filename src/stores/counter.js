@@ -7,11 +7,15 @@ export const useCounterStore = defineStore({
   }),
   getters: {
     count: (state) => state.counter,
-    doubleCount: (state) => state.counter * 2
+    unusedGetter: () => console.log('this should show up as not being covered in test coverage')
   },
   actions: {
-    increment() {
-      this.counter++
+    increment(payload) {
+      if (payload) {
+        this.counter = this.counter + payload;
+      } else {
+        this.counter++
+      }
     }
   }
 })
