@@ -4,7 +4,7 @@ This template is exploratory in nature trying to figure out the needed setup to 
 This repo was initialized by running `npm init vue@latest`
 
 * Jest has been set up to compile with babel-jest.
-* This project has a sample test for a SFC component, amulti-file component, and a pinia store that all pass.
+* This project has a sample test for a SFC component, a multi-file component, and a pinia store that all pass.
 * Code coverage however is not properly working in this setup at the moment.
   * Code coverage is collected for the SFC component and the store code but not the multi-file component.
   * There is an open GitHub issue around code coverage similar to the behavior we are seeing in this repo: https://github.com/facebook/jest/issues/12819
