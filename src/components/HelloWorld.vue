@@ -1,4 +1,6 @@
 <script setup>
+import Button from './Multi-File-Button/index.vue';
+
 defineProps({
   msg: {
     type: String,
